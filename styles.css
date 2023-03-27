@@ -1,3 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  
+  
+  
+}
+
+/* Header */
+
+.header {
+  background-color: #fffbfb;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px 50px 20px 50px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
 
@@ -15,6 +37,9 @@
   /* width: 280px; */
   border-radius: 50%;
   font-size: 30px;
+  padding: 10px 15px;
+  
+  transition: filter 0.15s ease-in-out;
 }
 
 /* The popup form - hidden by default */
@@ -24,23 +49,30 @@
   bottom: 0; 
   right: 15px;
   border: 3px solid #f1f1f1;
+  border-radius: 8px;
   z-index: 9;
+  
+  border-radius: 8px;
 }
 
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background-color: white;
+  background-color: #fffbfb;
 }
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=number],.form-container input[type=radio] {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  /* margin: 5px 0 22px 0; */
   border: none;
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
+  
+  padding: 10px;
+  border-radius: 8px;
+  
 }
 
 /* When the inputs get focus, do something */
@@ -51,7 +83,7 @@
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: #9fff9c;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -59,11 +91,17 @@
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: filter 0.15s ease-in-out;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: #ff9c9c;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: filter 0.15s ease-in-out;
 }
 
 /* Add some hover effects to buttons */
@@ -73,21 +111,48 @@
 
 .card2 {
   border: 2px solid pink;
-  gap: 50px;
-  width: fit-content;
-  
-  width: 150px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  font-size: 20px;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fffbfb;
+  box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+  line-height: 1.2;
+  transition: transform .2s;
+}
+
+.card2:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+.card2> button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: filter 0.15s ease-in-out;
+}
+
+.card2> button:hover {
+  filter: brightness(90%);
 }
 
  #display {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px 50px 20px 50px;
   
-  width: 500px;
 } 
 
+header+h1 {
+  padding: 20px 50px 20px 50px;
+}
+
 /* .cards {
-  background-color: #04AA6D;
+ gap: 100px;
 } */
 
 /* for cards whole ko use display */
@@ -96,3 +161,71 @@
 
 
 
+
+
+
+
+
+
+/* glow on hover for name */
+/* 
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  color: #e6007e;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #e6007e
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+} */

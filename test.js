@@ -73,16 +73,16 @@ function displayCard(){
     author.textContent = `by ${tempAuthor.value}`;
     pages.textContent = `${tempPages.value} pages`;
     if (tempStatus.checked == true){
-        status.textContent = 'Read? Yes';
+        status.textContent = 'Status: Read';
     } else  {
-        status.textContent = 'Read? No';
+        status.textContent = 'Status: Not Read';
     }
 
     statusChange.addEventListener('click', ( )=> {
-        if (status.textContent == 'Read? Yes'){
-            status.textContent = 'Read? No';
-        } else if (status.textContent == 'Read? No')  {
-            status.textContent = 'Read? Yes';
+        if (status.textContent == 'Status: Read'){
+            status.textContent = 'Status: Not Read';
+        } else if (status.textContent == 'Status: Not Read')  {
+            status.textContent = 'Status: Read';
         }
     })
 

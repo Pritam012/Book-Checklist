@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
     
 </head>
 <body>
     <div class="container">
-        My Books
+        <header class="header">
+            <div class="container">
+              <h1>Library</h1>
+              <!-- <button class="glow-on-hover" type="button">Pritam Adhikari</button> -->
+            </div>
+          </header>
+        <h1>My Books</h1>
         <div id="display">
             
         </div>
@@ -32,7 +39,7 @@
                 <label for="status">I have read this book:</label>
                 <input type="checkbox" name="status" id="status" required>
 
-                <button type="button" class="btn" id="submit">submit</button>
+                <button type="button" class="btn" id="submit">Submit</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         
